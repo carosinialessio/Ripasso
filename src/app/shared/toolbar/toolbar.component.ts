@@ -20,7 +20,7 @@ export class ToolbarComponent implements OnInit, OnChanges{
 
   ngOnChanges(changes: SimpleChanges): void {
     switch(this.role) {
-      case "admin": {
+      case ADMIN: {
         this.items = [
           {label: 'Offerte', icon: 'pi pi-fw pi-home', routerLink: 'vacancy/vacancy-list'},
     
@@ -38,7 +38,7 @@ export class ToolbarComponent implements OnInit, OnChanges{
         this.router.navigate(['']);
         break;
       }
-      case "user": {
+      case USER: {
         this.items = [
           {label: 'Offerte', icon: 'pi pi-fw pi-home', routerLink: 'vacancy/vacancy-list'},
     
@@ -56,7 +56,7 @@ export class ToolbarComponent implements OnInit, OnChanges{
         this.router.navigate(['']);
         break;
       }
-      case "agency": {
+      case AGENCY: {
         this.items = [
           {label: 'Offerte', icon: 'pi pi-fw pi-home', routerLink: 'vacancy/vacancy-list'},
 
