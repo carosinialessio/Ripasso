@@ -1,4 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
 const USER: string = "user";
@@ -14,7 +15,7 @@ export class ToolbarComponent implements OnInit, OnChanges{
 
   @Input() role: string;
 
-  constructor() {
+  constructor(private router: Router) {
    }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -34,6 +35,7 @@ export class ToolbarComponent implements OnInit, OnChanges{
           {label: 'Crea Utente', icon: 'pi pi-fw pi-user-plus', routerLink: 'user/create-user', visible: true},
         ];
         this.activeItem = this.items[0];
+        this.router.navigate(['']);
         break;
       }
       case "user": {
@@ -51,6 +53,7 @@ export class ToolbarComponent implements OnInit, OnChanges{
           {label: 'Crea Utente', icon: 'pi pi-fw pi-user-plus', routerLink: 'user/create-user', visible: false},
         ];
         this.activeItem = this.items[0];
+        this.router.navigate(['']);
         break;
       }
       case "agency": {
@@ -68,6 +71,7 @@ export class ToolbarComponent implements OnInit, OnChanges{
           {label: 'Crea Utente', icon: 'pi pi-fw pi-user-plus', routerLink: 'user/create-user', visible: false},
         ];
         this.activeItem = this.items[0];
+        this.router.navigate(['']);
         break;
       }
     }
