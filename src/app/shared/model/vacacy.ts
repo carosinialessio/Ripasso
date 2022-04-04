@@ -1,5 +1,4 @@
 import { Azienda } from "./azienda";
-import { Candidatura } from "./candidatura";
 
 export class Vacancy {
     id: number;
@@ -9,5 +8,4 @@ export class Vacancy {
     settore: string;
     ruolo: string;
     budget: number;
-    candidature: Candidatura;
 }
