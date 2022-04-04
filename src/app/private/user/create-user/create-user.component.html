@@ -1,0 +1,57 @@
+<p-toast position="top-center" key="tc"></p-toast>
+<div class="container-fluid p-fluid grid">
+    <div class="row">
+        <div class="col-12">
+            <p-card [style]="{'margin-left' : '2em','margin-right' : '2em'}">
+                <ng-template pTemplate="header">
+                    <h2 class="text-center">Crea Utente</h2>
+                </ng-template>
+                <form #userForm="ngForm">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Nome
+                            <input type="text" [(ngModel)]="user.nome" name="nome" pInputText required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Cognome
+                            <input type="text" [(ngModel)]="user.cognome" name="cognome" pInputText required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Data Di Nascita
+                            <p-calendar [(ngModel)]="user.dataNascita" name="dataNascita" [required]="true"
+                                [dateFormat]="'dd/mm/yy'" [dataType]="'string'"></p-calendar>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Email
+                            <input type="email" [(ngModel)]="user.email" name="email" pInputText required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Telefono
+                            <input type="text" pattern="^[0-9][0-9]*" [(ngModel)]="user.telefono" name="telefono"
+                                pInputText required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Indirizzo
+                            <input [disabled]="false" type="text" [(ngModel)]="user.indirizzo" name="indirizzo"
+                                pInputText required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Città
+                            <input [disabled]="false" type="text" [(ngModel)]="user.citta" name="citta" pInputText
+                                required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Carica CV
+                            <p-fileUpload name="file" id="file" [showUploadButton]="false" [fileLimit]="1"
+                                [(ngModel)]="user.file">
+                            </p-fileUpload>
+                        </div>
+                    </div>
+                </form>
+                <ng-template pTemplate="footer">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-1 col-sm-auto">
+                            <button [disabled]="userForm.invalid" pButton label="Salva" class="p-button-success"
+                                (click)="createUser(); userForm.form.markAsPristine()"></button>
+                        </div>
+                        <div class="col-md-1 col-sm-auto">
+                            <button pButton label="Cancella" class="p-button-warning ml-3" (click)="clear();userForm.form.markAsPristine()"></button>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

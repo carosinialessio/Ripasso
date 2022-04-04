@@ -1,0 +1,5 @@
+<p-selectButton [options]="roleOptions" [(ngModel)]="roleChoosen" optionLabel="label" optionValue="value" (onChange)="changeRole()"></p-selectButton>
+<app-toolbar [role]="roleChoosen"></app-toolbar>
+<div class="pt-2">
+    <router-outlet></router-outlet>
+</div>

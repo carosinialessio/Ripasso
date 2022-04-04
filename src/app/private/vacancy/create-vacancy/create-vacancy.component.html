@@ -1,0 +1,50 @@
+<p-toast position="top-center" key="tc"></p-toast>
+<div class="container-fluid p-fluid grid">
+    <div class="row">
+        <div class="col-12">
+            <p-card [style]="{'margin-left' : '2em','margin-right' : '2em'}">
+                <ng-template pTemplate="header">
+                    <h2 class="text-center">Crea Nuova Offerta di Lavoro</h2>
+                </ng-template>
+                <form #vacancyForm="ngForm">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Titolo
+                            <input type="text" [(ngModel)]="vacancy.titolo" name="titolo" pInputText required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Azienda
+                            <input type="text" [(ngModel)]="vacancy.azienda" name="azienda" pInputText required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Settore
+                            <input type="text" [(ngModel)]="vacancy.settore" name="settore" pInputText required />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Ruolo
+                            <input type="email" [(ngModel)]="vacancy.ruolo" name="ruolo" pInputText required="" />
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Budget in €
+                            <input type="text" pattern="^[0-9][0-9]*" [(ngModel)]="vacancy.budget" name="budget"
+                                pInputText required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-auto mt-3">
+                            Descrizione
+                            <textarea pInputTextarea [(ngModel)]="vacancy.descrizione" name="desc" required [cols]="50"
+                                [autoResize]="true"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <ng-template pTemplate="footer">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-1 col-sm-auto">
+                            <button [disabled]="vacancyForm.invalid" pButton label="Salva" class="p-button-success"
+                                (click)="createVacancy(); vacancyForm.form.markAsPristine()"></button>
+                        </div>
+                        <div class="col-md-1 col-sm-auto">
+                            <button pButton label="Cancella" class="p-button-warning ml-3" (click)="clear(); vacancyForm.form.markAsPristine()"></button>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

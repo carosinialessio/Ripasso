@@ -1,0 +1,41 @@
+<div class="container-fluid p-fluid grid">
+    <div class="row">
+        <div class="col-12">
+            <p-card [style]="{'margin-left' : '2em','margin-right' : '2em'}">
+                <ng-template pTemplate="header">
+                    <div class="row text-center">
+                    <h2>Profilo dell'Azienda: </h2>
+                    </div>
+                    <div class="row text-center"><h2>{{agency.nome}}</h2></div>
+                </ng-template>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-auto">
+                        Nome
+                        <input [disabled]="true" type="text" [(ngModel)]="agency.nome" id="nome" pInputText />
+                    </div>
+                    <div class="col-md-4 col-sm-auto">
+                        Settore
+                        <input [disabled]="true" type="text" [(ngModel)]="agency.settore" id="settore" pInputText />
+                    </div>
+                    <div class="col-md-4 col-sm-auto">
+                        Numero Dipendenti
+                        <input [disabled]="true" type="text" [(ngModel)]="agency.numeroDipendenti" id="nDip"
+                            pInputText />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-auto mt-3">
+                        Descrizione
+                        <textarea pInputTextarea [disabled]="true" [(ngModel)]="agency.descrizione" id="desc"
+                            [cols]="50" [autoResize]="true"></textarea>
+                    </div>
+                </div>
+                <ng-template pTemplate="footer">
+
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

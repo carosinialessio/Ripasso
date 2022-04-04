@@ -1,0 +1,47 @@
+{
+  "utente": {
+    "nome": "Alessio",
+    "cognome": "Carosini",
+    "dataNascita": "14/02/1994",
+    "email": "alessio.carosini@gmail.com",
+    "telefono": "3389163844",
+    "indirizzo": "Via Roma 4",
+    "citta": "Roma"
+  },
+  "vacancy": [
+    {
+      "id": 1,
+      "titolo": "Senior Angular Developer",
+      "azienda": "Node",
+      "settore": "Informatica",
+      "ruolo": "Senior Consultant",
+      "budget": 60000,
+      "descrizione": "Società in forte espansione nell’area della consulenza informatica e nella realizzazione d’importanti progetti ad alto contenuto tecnologico, ricerca: SENIOR ANGULAR DEVELOPER (remoto). Conoscenza Linguaggio Angular 2+ (almeno Angular 9 e successivi). Conoscenza di TS, ES6, CSS3, HTML5. Esperienza su AngularJS, LESS/SASS, webpack/gulp, Unit Testing. Paradigma REST e conoscenza REST APIs con relativa esperienza di integrazione. Conoscenza di Git (GitFlow). Utilizzo di tool di sviluppo quali: BitBucket, Bamboo, Jira, Confluence etc. Esperienza in progetti di tipo Agile. Opzionale e gradita: Conoscenza dell’architettura Flux (Redux). Esperienza con NgRx, Kendo UI "
+    },
+    {
+      "id": 2,
+      "titolo": "Junior Angular Developer",
+      "azienda": "Node",
+      "settore": "Informatica",
+      "ruolo": "Analyst Consultant",
+      "budget": 25000,
+      "descrizione": " società in forte espansione nell’area della consulenza informatica e nella realizzazione d’importanti progetti ad alto contenuto tecnologico, ricerca: JUNIOR ANGULAR DEVELOPER (remoto). Conoscenza Linguaggio Angular 2+ (almeno Angular 8 e successivi). Conoscenza di TS, ES6, CSS3, HTML5."
+    },
+    {
+      "titolo": "Operaio Agricolo",
+      "azienda": "Melinda",
+      "settore": "Agricoltura",
+      "ruolo": "Operaio Qualificato",
+      "budget": "18000",
+      "descrizione": "Eseguire le lavorazioni nell’orto come indicato dalla direzione aziendale e dal proprio responsabile: lavorazioni primarie, lavorazioni secondarie, preparazione letto di semina, trapianti semine, raccolta, composizione delle cassette, trasporti, pulizie del furgone, della cella frigorifera e altri locali utilizzati per gli ortaggi.  Eseguire le lavorazioni dei terreni con i mezzi agricoli aziendali. E’ richiesta la capacità di guidare trattori fino a 45 hp saper utilizzare il ripper, l’estirpatore, la fresa, la trinciatrice, le seminatrice, la trapiantatrice, l’utilizzo dei motocoltivatori. E’ necessario saper eseguire con attenzione le operazioni di raccolta degli ortaggi. Dal campo gli ortaggi vengono posti nelle cassette, in seguito lavati e preparati per la vendita. Gli ortaggi vengono consegnati ai negozi tutte le mattine. Ogni 3 settimane il nuovo assunto avrà il suo turno di consegna. E’ richiesta la disponibilità ad effettuare lavoro straordinario durante il sabato e la domenica a turno con gli altri operai.\n\nSi richiede la disponibilità ad abitare in azienda presso una delle case coloniche presenti in azienda: appartamento con 2 camere bagno arredato e fornito di cucina e frigorifero e riscaldamento.",
+      "id": 3
+    }
+  ],
+  "azienda": {
+    "id": 1,
+    "nome": "Node",
+    "settore": "Informatica",
+    "numeroDipendenti": 50,
+    "descrizione": "Node è una cooperativa specializzata in servizi digitali, composta da un team professionale, competente e motivato. La sua mission è quella di rendere accessibili all’utenza i benefici dell’Information technology. Node è la società di sistema di Confcooperative per i servizi IT, conosce a fondo, quindi, i valori, i linguaggi e le esigenze delle cooperative. La compenetrazione nelle esperienze dei clienti l’aiuta costantemente a progettare sempre soluzioni sartoriali al fine di porre solide basi su cui costruire relazioni durature e collaborazioni performanti."
+  }
+}

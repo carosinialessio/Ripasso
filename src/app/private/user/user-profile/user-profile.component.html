@@ -1,0 +1,52 @@
+<div class="container-fluid p-fluid grid">
+    <div class="row">
+        <div class="col-12">
+            <p-card [style]="{'margin-left' : '2em','margin-right' : '2em'}">
+                <ng-template pTemplate="header">
+                    <h2 class="text-center">Profilo di: {{user.nome}} {{user.cognome}}</h2>
+                </ng-template>
+
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 col-sm-auto mt-3">
+                        Nome
+                        <input [disabled]="true" type="text" [(ngModel)]="user.nome" id="nome" pInputText />
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-auto mt-3">
+                        Cognome
+                        <input [disabled]="true" type="text" [(ngModel)]="user.cognome" id="cognome" pInputText />
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-auto mt-3">
+                        Data Di Nascita
+                        <input [disabled]="true" type="text" [(ngModel)]="user.dataNascita" id="dataNascita"
+                            pInputText />
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-auto mt-3">
+                        Email
+                        <input [disabled]="true" type="email" [(ngModel)]="user.email" id="email" pInputText />
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-auto mt-3">
+                        Telefono
+                        <input [disabled]="true" type="text" pattern="^[0-9][0-9]*" [(ngModel)]="user.telefono"
+                            id="telefono" pInputText />
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-auto mt-3">
+                        Indirizzo
+                        <input [disabled]="true" type="text" pattern="^[0-9][0-9]*" [(ngModel)]="user.indirizzo"
+                            id="indirizzo" pInputText />
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-auto mt-3">Città
+                        <input [disabled]="true" type="text" pattern="^[0-9][0-9]*" [(ngModel)]="user.citta" id="citta"
+                            pInputText />
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-auto mt-3">
+                        CV File
+                        <input [disabled]="true" type="text" [(ngModel)]="user.cvFileName" id="cvFileName" pInputText />
+                    </div>
+                </div>
+                <ng-template pTemplate="footer">
+
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>
